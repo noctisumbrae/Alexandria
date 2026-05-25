@@ -1,0 +1,373 @@
+:root {
+    --branco: #ffffff;
+    --fundo: #ffffff;
+    --fundo-claro: #ffffff;
+    --azul: #1f2a44;
+    --azul-hover: #162033;
+    --dourado: #c9a55c;
+    --dourado-claro: #eadfbe;
+    --cinza: #e8e3d8;
+    --texto: #2b2b2b;
+    --texto-suave: #666666;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--fundo);
+    color: var(--texto);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    background: var(--branco);
+    color: var(--azul);
+    padding: 18px 8%;
+    border-bottom: 2px solid var(--dourado);
+    box-shadow: 0 2px 10px rgba(31, 42, 68, 0.06);
+}
+
+.logo-site {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logo-site img {
+    display: block;
+    width: 110px;
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 26px;
+}
+
+.botao,
+button {
+    display: inline-block;
+    border: 1px solid var(--azul);
+    border-radius: 999px;
+    padding: 9px 14px;
+    background: var(--azul);
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+nav a {
+    color: var(--azul);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 6px 10px;
+}
+
+.secundario {
+    background: var(--branco);
+    border-color: var(--dourado);
+    color: var(--azul);
+}
+
+main {
+    width: 84%;
+    margin: 0 auto;
+    padding: 34px 0;
+    flex: 1;
+}
+
+.hero-imagem {
+    max-width: 100%;
+    margin: 0 auto 24px auto;
+    background: var(--branco);
+    border: 1px solid var(--cinza);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 22px rgba(31, 42, 68, 0.06);
+}
+
+.hero-imagem img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero,
+main > section,
+.pagina-formulario section {
+    background: var(--branco);
+    padding: 28px;
+    border: 1px solid var(--cinza);
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(31, 42, 68, 0.06);
+    margin-bottom: 24px;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--branco), var(--fundo-claro));
+    border-top: 4px solid var(--dourado);
+}
+
+.hero h2,
+main h2 {
+    margin-top: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: var(--azul);
+}
+
+main h3 {
+    color: var(--azul);
+}
+
+.catalogo,
+.painel {
+    display: grid;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.catalogo {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.painel {
+    grid-template-columns: repeat(3, 1fr);
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+}
+
+.card-livro,
+.painel article {
+    background: var(--fundo-claro);
+    border: 1px solid var(--cinza);
+    border-radius: 12px;
+    padding: 18px;
+    box-shadow: 0 4px 14px rgba(31, 42, 68, 0.04);
+}
+
+.painel article {
+    display: flex;
+    flex-direction: column;
+    min-height: 190px;
+    border-top: 4px solid var(--dourado);
+}
+
+.painel article h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+.painel article p {
+    flex: 1;
+    margin-top: 0;
+    color: var(--texto-suave);
+}
+
+.painel article .botao {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.card-livro figure,
+.detalhe-livro figure {
+    margin: 0 0 16px 0;
+}
+
+.card-livro img {
+    width: 100%;
+    height: 210px;
+    object-fit: contain;
+    background: var(--branco);
+    border: 1px solid var(--cinza);
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.detalhe-livro {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 28px;
+}
+
+.detalhe-livro img {
+    width: 100%;
+    background: var(--branco);
+    border: 1px solid var(--cinza);
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.pagina-formulario {
+    max-width: 620px;
+}
+
+form {
+    margin-top: 18px;
+}
+
+fieldset {
+    border: 1px solid var(--cinza);
+    border-radius: 10px;
+    padding: 18px;
+}
+
+legend {
+    color: var(--azul);
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    font-weight: bold;
+    color: var(--azul);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px;
+    border: 1px solid var(--cinza);
+    border-radius: 8px;
+    background: var(--branco);
+    color: var(--texto);
+    font-size: 15px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid var(--dourado-claro);
+    border-color: var(--dourado);
+}
+
+textarea {
+    resize: vertical;
+}
+
+form button {
+    margin-top: 18px;
+}
+
+.form-linha {
+    display: inline-block;
+    margin: 3px;
+}
+
+.form-linha button {
+    margin-top: 0;
+    padding: 8px 10px;
+    font-size: 13px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+    background: var(--branco);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th,
+td {
+    border: 1px solid var(--cinza);
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: var(--azul);
+    color: var(--branco);
+}
+
+tr:nth-child(even) {
+    background: var(--fundo-claro);
+}
+
+.aviso {
+    background: #fff8df;
+    border-left: 5px solid var(--dourado);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+footer {
+    background: var(--azul);
+    color: var(--branco);
+    padding: 18px 8%;
+    text-align: center;
+    border-top: 3px solid var(--dourado);
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 760px) {
+    header {
+        align-items: flex-start;
+        padding: 18px 5%;
+    }
+
+    .logo-site,
+    nav {
+        width: 100%;
+    }
+
+    .logo-site img {
+        width: 95px;
+    }
+
+    nav {
+        justify-content: flex-start;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    .detalhe-livro {
+        grid-template-columns: 1fr;
+    }
+
+    .painel {
+        grid-template-columns: 1fr;
+    }
+
+    .catalogo {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
