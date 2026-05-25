@@ -1,0 +1,11 @@
+<svg width="320" height="440" viewBox="0 0 320 440" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="320" height="440" rx="18" fill="#8A5A35"/>
+<rect x="44" y="50" width="232" height="340" rx="12" fill="#FFF8EC"/>
+<rect x="64" y="82" width="192" height="22" rx="6" fill="#4B2E1F"/>
+<rect x="80" y="124" width="160" height="14" rx="4" fill="#C9AD86"/>
+<rect x="80" y="150" width="160" height="14" rx="4" fill="#C9AD86"/>
+<path d="M100 230C100 206 119 186 144 186H220V316H144C119 316 100 296 100 272V230Z" fill="#5C6B3C"/>
+<path d="M100 230C100 206 119 186 144 186H220" stroke="#4B2E1F" stroke-width="10" stroke-linecap="round"/>
+<path d="M100 272C100 296 119 316 144 316H220" stroke="#4B2E1F" stroke-width="10" stroke-linecap="round"/>
+<text x="160" y="360" text-anchor="middle" font-family="Arial" font-size="22" fill="#4B2E1F">Alexandria</text>
+</svg>
