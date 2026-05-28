@@ -63,10 +63,10 @@ CREATE TABLE emprestimos (
 );
 
 INSERT INTO funcionarios (nome, email, senha, telefone, cargo) VALUES
-('Funcionário', 'funcionario@alexandria.com', '123456', '(18) 99999-0000', 'Bibliotecário');
+('Funcionário', 'admin@alexandria.com', '123456', '(18) 99999-0000', 'Bibliotecário');
 
 INSERT INTO leitores (nome, email, senha, telefone, cpf) VALUES
-('Henrique', 'leitor@alexandria.com', '123456', '(18) 98888-0000', '000.000.000-00');
+('Henrique', 'henrique@alexandria.com', '123456', '(18) 98888-0000', '000.000.000-00');
 
 INSERT INTO autores (nome, nacionalidade, biografia) VALUES
 ('Machado de Assis', 'Brasileira', 'Escritor brasileiro conhecido por romances, contos e crônicas.'),
