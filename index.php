@@ -68,5 +68,19 @@ $resultado = mysqli_query($conexao, $sql);
     <footer>
         <p>Alexandria - Sistema acadêmico de biblioteca pública</p>
     </footer>
+
+    <div id="chat-popup" class="chat-popup">
+        <div class="chat-header">
+            <h3>Assistente Alexandria</h3>
+            <button id="close-chat">X</button>
+        </div>
+        <div class="chat-body" id="chat-body"></div>
+        <div class="chat-footer">
+            <input type="text" id="chat-input" placeholder="Digite sua dúvida...">
+            <button id="send-chat">Enviar</button>
+        </div>
+    </div>
+    <button id="open-chat" class="chat-btn">💬</button>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
